@@ -4,11 +4,11 @@ class Program
 {
     static void Main()
     {
-        Shape circle = new Circle(5);
-        Shape rectangle = new Rectangle(4, 6);
+        IMovable car = new Car();
+        IMovable bicycle = new Bicycle();
 
-        Console.WriteLine($"Circle Area: {circle.GetArea():F2}");
-        Console.WriteLine($"Rectangle Area: {rectangle.GetArea():F2}");
+        car.Move();
+        bicycle.Move();
 
         Console.WriteLine("\nPress any key to exit...");
         Console.ReadKey();
