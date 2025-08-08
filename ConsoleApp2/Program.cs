@@ -4,13 +4,11 @@ class Program
 {
     static void Main()
     {
-        Animal genericAnimal = new Animal();
-        Animal dog = new Dog();
-        Animal cat = new Cat();
+        Shape circle = new Circle(5);
+        Shape rectangle = new Rectangle(4, 6);
 
-        genericAnimal.MakeSound(); 
-        dog.MakeSound();           
-        cat.MakeSound();           
+        Console.WriteLine($"Circle Area: {circle.GetArea():F2}");
+        Console.WriteLine($"Rectangle Area: {rectangle.GetArea():F2}");
 
         Console.WriteLine("\nPress any key to exit...");
         Console.ReadKey();
